@@ -13,7 +13,7 @@
 * [Rename](#Rename)
 * [Deployment](#Deployment)
 
-For PHP5.6 with Apache2 use [Dockerized PHP5.6 with Apache2](https://github.com/eduardsaryan/dockerized-lamp-php5.6)
+FThe use of PHP-7.4.23 integrated Nginx-1.18 is based on  [Dockerized PHP-7.4.23 with Nginx-1.18](https://github.com/eduardsaryan/dockerized-lemp-php5.6-fpm) modification
 
 ### Prerequisites
 *	[Connect to the Internet](http://www.brandx.net/support/dsl/quickstart/dsl-quickstart.html)
