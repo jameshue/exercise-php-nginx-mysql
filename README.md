@@ -68,13 +68,13 @@ It is highly advised to change all names.
 ### Deployment
 Clone repo to your server. I suggest using ```/opt``` directory
 ```less
-sudo git clone https://github.com/eduardsaryan/dockerized-lemp-php5.6-fpm.git
+sudo git clone https://github.com/jameshue/exercise-php-nginx-mysql.git
 ```
 
-Put your webapp/website into the ```web``` folder. <br>
+Put your WEB-Application into the ```webapp``` folder. <br>
 Navigate to the project folder and start containers.
 
 ```less
-cd /path/to/dockerized-lemp-php5.6-fpm
+cd /path/to/exercise-php-nginx-mysql
 docker-compose up -d
 ```
