@@ -16,6 +16,7 @@
 For PHP5.6 with Apache2 use [Dockerized PHP5.6 with Apache2](https://github.com/eduardsaryan/dockerized-lamp-php5.6)
 
 ### Prerequisites
+*	[Connect to the Internet](http://www.brandx.net/support/dsl/quickstart/dsl-quickstart.html)
 *	[Docker](https://www.docker.com/)
 *	[Docker Compose](https://docs.docker.com/compose/install/)
 
