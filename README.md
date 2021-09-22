@@ -13,7 +13,7 @@
 * [Rename](#Rename)
 * [Deployment](#Deployment)
 
-FThe use of PHP-7.4.23 integrated Nginx-1.18 is based on  [dockerized-lemp-php5.6-fpm](https://github.com/eduardsaryan/dockerized-lemp-php5.6-fpm) modification
+The use of PHP-7.4.23 integrated Nginx-1.18 is based on  [dockerized-lemp-php5.6-fpm](https://github.com/eduardsaryan/dockerized-lemp-php5.6-fpm) modification
 
 ### Prerequisites
 *	[Connect to the Internet](http://www.brandx.net/support/dsl/quickstart/dsl-quickstart.html)
