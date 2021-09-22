@@ -1,4 +1,4 @@
-### Dockerized PHP5.6-FPM
+### Dockerized PHP7.4.23-FPM
 
 ![Logo](./assets/logo.png)
 
@@ -23,6 +23,7 @@ For PHP5.6 with Apache2 use [Dockerized PHP5.6 with Apache2](https://github.com/
 ```less
 ├── .env.db
 ├── .env.web
+├── docker-compose.yml
 ├── Dockerfile
 ├── backup
 │   ├── db_backup.sh
@@ -35,7 +36,11 @@ For PHP5.6 with Apache2 use [Dockerized PHP5.6 with Apache2](https://github.com/
 |   ├── supervisord.conf
 │   └── website.conf
 ├── docker-compose.yml
-└── web
+├── webapp
+|   └── public
+|       ├── favicon.ico
+|       └── index.php      
+└── webinfo
     └── index.php
 ```
 
