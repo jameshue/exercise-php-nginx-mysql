@@ -33,6 +33,7 @@ The use of PHP-7.4.23 integrated Nginx-1.18 is based on  [dockerized-lemp-php5.6
 │   ├── web_backup.sh
 │   └── web_restore.sh
 ├── conf
+|   ├── docker.cnf
 |   ├── fpm.conf
 |   ├── php.ini
 |   ├── supervisord.conf
