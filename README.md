@@ -53,15 +53,15 @@ The use of PHP-7.4.23 integrated Nginx-1.18 is based on  [dockerized-lemp-php5.6
 ```
 
 ### Backup Folder
-| File                        | Description                              |
-| :-------------------------- |:---------------------------------------- |
-| db_backup.sh                | Small script to backup MySQL database    |      
-| db_restore                  | Small script to backup web Folder        |
-| web_backup.sh               | Small script to restore MySQL database   |
-| web_restore.sh              | Small script to restore web Folder       |
+| File                        | Description                                                           |
+| :-------------------------- |:--------------------------------------------------------------------- |
+| db_backup.sh                | (Perform daily backups and delete backup files older than 10 days.)   |      
+| db_restore                  | Small script to backup web Folder                                     |
+| web_backup.sh               | Small script to restore MySQL database                                |
+| web_restore.sh              | Small script to restore web Folder                                    |
 
 ### Config Folder
-| File                        | Description                              |
+| File                        | Description                                                                          |
 | :-------------------------- |:------------------------------------------------------------------------------------ |
 | fpm.conf                    | Custom PHP-FPM config                                                                |
 | php.ini                     | For additional configurations of PHP, еdit this file before deploying the container. |  
