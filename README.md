@@ -28,8 +28,13 @@ The use of PHP-7.4.23 integrated Nginx-1.18 is based on  [dockerized-lemp-php5.6
 ├── docker-compose.yml
 ├── Dockerfile
 ├── backup
+|   ├── db
+|   |   └── (bak-list)  
 │   ├── db_backup.sh
 │   ├── db_restore.sh
+|   ├── init.sql
+|   ├── web
+|   |   └── (bak-list)
 │   ├── web_backup.sh
 │   └── web_restore.sh
 ├── conf
