@@ -15,13 +15,13 @@ services:
     links:
       - webapp-db
     env_file:
-      - .env.db
+      - .env
   webapp-db:
     restart: always
     image: mysql:5.7
     container_name: webapp-db
     env_file:
-      - .env.db
+      - .env
     volumes:
       - ./db:/var/lib/mysql
 volumes:
