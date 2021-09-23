@@ -8,8 +8,8 @@ services:
     image: webapp-web
     container_name: webapp-web
     volumes:
-      - ./webapp/public/:/var/www/html/website
-      - ./webapp/:/app/
+      - ./app/public/:/var/www/html/website
+      - ./app/:/app/
     ports:
       - 8000:80
     links:

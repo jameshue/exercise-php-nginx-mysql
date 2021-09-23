@@ -47,7 +47,7 @@ The use of PHP-7.4.23 integrated Nginx-1.18 is based on  [dockerized-lemp-php5.6
 |   ├── supervisord.conf
 │   └── website.conf
 ├── docker-compose.yml
-├── webapp  (Entry platform of laravel)
+├── app  (Entry platform of laravel)
 |   └── public  (Entrance location of nginx)
 |       ├── favicon.ico
 |       └── index.php      
