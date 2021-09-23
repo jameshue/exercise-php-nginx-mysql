@@ -85,11 +85,14 @@ Navigate to the project folder and start containers.
 ```less
 cd /path/to/exercise-php-nginx-mysql
 docker-compose up -d
+```
+
+Perform database initialization steps.
+
+```less
 cp backup/init.sql db/
 docker exec -it webapp-db bash
 cd /var/lib/mysql
 mysql -uroot -ppassword
 \. init.sql
-
-
 ```
