@@ -87,7 +87,7 @@ cd /path/to/exercise-php-nginx-mysql
 docker-compose up -d
 ```
 
-Perform database initialization steps. ( Then you can link http://smartclouds.site:8000 )
+Perform database initialization steps. ( Then you can link http://localhost:8000 or http://smartclouds.site:8000 )
 
 ```less
 cp backup/init.sql db/
