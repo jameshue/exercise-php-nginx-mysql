@@ -116,6 +116,6 @@ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d daocloud.io/
 docker run --name some-app --link some-mysql:mysql -d app-that-uses-mysql
 ```
 
-### php-laravel-mysql-sample 應用截圖
+### exercise-php-nginx-mysql 應用截圖
 
-![exercise-php-nginx-mysql](./php-laravel-mysql-sample.png)
+![exercise-php-nginx-mysql](./exercise-php-nginx-mysql.png)

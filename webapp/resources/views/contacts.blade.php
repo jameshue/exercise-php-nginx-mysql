@@ -33,7 +33,7 @@
 <div class="container">
     <div class="content">
         <h1>
-            PHP-Laravel-Mysql-Sample 範例
+            Exercise-PHP-Nginx-mysql 範例
         </h1>
         <table class="table">
             <caption>通訊錄</caption>
