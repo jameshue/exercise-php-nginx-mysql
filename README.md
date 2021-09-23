@@ -22,6 +22,7 @@ The use of PHP-7.4.23 integrated Nginx-1.18 is based on  [dockerized-lemp-php5.6
 *	[Docker](https://www.docker.com/)
 *	[Docker Compose](https://docs.docker.com/compose/install/)
 *	[php artisan key:generate](https://github.com/laravel/framework/issues/20719)
+*	[Add smartclouds.site record to /etc/hosts]()
 
 ### Project Tree
 ```less
