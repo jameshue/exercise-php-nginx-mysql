@@ -10,7 +10,6 @@
 * [Project Tree](#Project-Tree)
 * [Backup Folder](#Backup-Folder)
 * [Config Folder](#Config-Folder)
-* [Rename](#Rename)
 * [Deployment](#Deployment)
 
 The use of PHP-7.4.23 integrated Nginx-1.18 is based on  [dockerized-lemp-php5.6-fpm](https://github.com/eduardsaryan/dockerized-lemp-php5.6-fpm) modification
@@ -68,11 +67,6 @@ The use of PHP-7.4.23 integrated Nginx-1.18 is based on  [dockerized-lemp-php5.6
 | php.ini                     | For additional configurations of PHP, еdit this file before deploying the container. |  
 | supervisord.conf            | supervisord.conf basic config                                                        |
 | website.conf                | Nginx basic config file.                                                             |
-
-### Rename
-It is highly advised to change all names.
-
------
 
 ### Deployment
 Clone repo to your server. I suggest using ```/opt``` directory
