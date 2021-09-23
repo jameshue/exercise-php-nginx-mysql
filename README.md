@@ -42,7 +42,6 @@ The use of PHP-7.4.23 integrated Nginx-1.18 is based on  [dockerized-lemp-php5.6
 |   ├── php.ini
 |   ├── supervisord.conf
 │   └── website.conf
-├── db ( SqlDB-storage )
 ├── docker-compose.yml
 ├── webapp
 |   └── public
