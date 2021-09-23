@@ -4,7 +4,7 @@
 
 ### Status
 ![GitHub last commit](https://img.shields.io/github/last-commit/jameshue/exercise-php-nginx-mysql)
-<img alt="Licenses" src="https://img.shields.io/badge/License-GPLv3-blue.svg" style="max-width:100%;">
+https://img.shields.io/github/repo-size/jameshue/exercise-php-nginx-mysql<img alt="Licenses" src="https://img.shields.io/badge/License-GPLv3-blue.svg" style="max-width:100%;">
 
 ### Table of contents
 * [Prerequisites](#Prerequisites)
