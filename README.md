@@ -48,7 +48,7 @@ The use of PHP-7.4.23 integrated Nginx-1.18 is based on  [dockerized-lemp-php5.6
 │   └── website.conf
 ├── docker-compose.yml
 ├── webapp
-|   └── public
+|   └── public  (Entrance location of nginx)
 |       ├── favicon.ico
 |       └── index.php      
 └── webinfo
