@@ -32,12 +32,12 @@ The use of PHP-7.4.23 integrated Nginx-1.18 is based on  [dockerized-lemp-php5.6
 ├── Dockerfile
 ├── backup
 |   ├── db
-|   |   └── (bak-list)  
+|   |   └── ( bak-list )  
 │   ├── db_backup.sh
 │   ├── db_restore.sh
 |   ├── init.sql
 |   ├── web
-|   |   └── (bak-list)
+|   |   └── ( bak-list )
 │   ├── web_backup.sh
 │   └── web_restore.sh
 ├── conf
@@ -47,8 +47,8 @@ The use of PHP-7.4.23 integrated Nginx-1.18 is based on  [dockerized-lemp-php5.6
 |   ├── supervisord.conf
 │   └── website.conf
 ├── docker-compose.yml
-├── webapp
-|   └── public  (Entrance location of nginx)
+├── webapp  ( Entry platform of laravel )
+|   └── public  ( Entrance location of nginx )
 |       ├── favicon.ico
 |       └── index.php      
 └── webinfo
