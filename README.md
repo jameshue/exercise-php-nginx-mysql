@@ -91,5 +91,6 @@ Perform database initialization steps. ( Then you can link http://smartclouds.si
 
 ```less
 cp backup/init.sql db/
+docker exec -i $(docker ps -qf name=webapp-web) bash -c 'chown -fR www-data. /app;composer -q install'
 docker exec -i $(docker ps -qf name=webapp-db) bash -c 'mysql --default-character-set=utf8mb4 -uroot -ppassword webapp_db < /var/lib/mysql/init.sql 2>/dev/null'
 ```
