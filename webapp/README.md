@@ -2,11 +2,7 @@
 
 > 目標：基于主流的 PHP 框架，用 Docker 鏡像的方式搭建一個 Laravel + MySQL 的應用。
 
-> 本項目代碼維護在 **[DaoCloud/php-laravel-mysql-sample](https://github.com/DaoCloud/php-laravel-mysql-sample)** 項目中。
-
 ### 創建 Laravel 應用容器
-
-> 因所有官方鏡像均位于境外服務器，為了確保所有示例能正常運行，DaoCloud 提供了一套境內鏡像源，並與官方源保持同步。
 
 首先，選擇官方的 PHP 鏡像作為項目的基礎鏡像。
 
@@ -63,7 +59,7 @@ WORKDIR /app
 * Laravel 是通過統一的項目的入口文件進入應用系統的。進而需要 Apache 開啟鏈接重寫模塊。
 * Apache 默認的文檔目錄為 `/var/www/html`，將 `/app` 定義為 Laravel 應用目錄，而 Laravel 的項目入口文件位于 `/app/public`。為了方便管理，把 `/var/www/html` 軟鏈接到 `/app/public`。
 
-緊接著，根據 DaoCloud 的最佳實踐，我們需要把第三方依賴預先加載好。
+緊接著，根據最佳實踐，我們需要把第三方依賴預先加載好。
 
 ```dockerfile
 # 預先加載 Composer 包依賴，優化 Docker 構建鏡像的速度
@@ -119,26 +115,6 @@ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d daocloud.io/
 ```bash
 docker run --name some-app --link some-mysql:mysql -d app-that-uses-mysql
 ```
-
-### 綁定 MySQL 數據服務（雲端）
-
-比起本地創建，在雲端創建和綁定 MySQL 數據服務會更簡單。
-
-1. 在 GitHub 上 Fork **[DaoCloud/php-laravel-mysql-sample](https://github.com/DaoCloud/php-laravel-mysql-sample)** 或者添加自己的代碼倉庫。
-2. 注冊成為 DaoCloud 用戶。
-3. 在 DaoCloud 「控制台」中選擇「代碼構建」。
-4. 創建新項目，選擇代碼源，開始構建鏡像。
-5. 在「服務集成」創建 MySQL 服務實例。
-6. 將構建的應用鏡像關聯 MySQL 服務實例並部署在雲端。
-
-DaoCloud 使用圖文介紹
-
-* 了解如何用 DaoCloud 進行代碼構建：參考[代碼構建](http://help.daocloud.io/features/build-flows.html)。
-* 了解如何用 DaoCloud 進行持續集成：參考[持續集成](http://help.daocloud.io/features/continuous-integration/index.html)。
-* 了解如何用為應用準備一個數據庫服務：參考[服務集成](http://help.daocloud.io/features/services.html)。
-* 了解如何部署一個剛剛構建好的應用鏡像：參考[應用部署](http://help.daocloud.io/features/packages.html)。
-
-[DaoCloud 使用視頻介紹](http://7u2psl.com2.z0.glb.qiniucdn.com/daocloud_small.mp4)
 
 ### php-laravel-mysql-sample 應用截圖
 
