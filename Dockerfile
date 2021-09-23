@@ -9,6 +9,7 @@ RUN   mkdir -p /var/www/html/website \
 # Copy config files into the container
 COPY  ./conf/website.conf /etc/nginx/sites-available/website.conf
 COPY  ./conf/php.ini /usr/local/etc/php/
+COPY  ./conf/docker.cnf /etc/mysql/conf.d/
 # COPY  web /var/www/html/website
 
 # Install Nginx and other necessary libraries

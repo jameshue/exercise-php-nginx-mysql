@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Get current date
-now=$(date +"%d-%b-%Y")
+now=$(date +"%Y-%m-%d-%H")
 
 
 # Restore DB.
