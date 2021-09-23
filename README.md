@@ -56,12 +56,14 @@ The use of PHP-7.4.23 integrated Nginx-1.18 is based on  [dockerized-lemp-php5.6
 | :-------------------------- |:--------------------------------------------------------------------- |
 | db_backup.sh                | (Perform daily backups and delete backup files older than 10 days.)   |      
 | db_restore                  | Small script to backup web Folder                                     |
+| init.sql                    | MySQL-Database initialization schema
 | web_backup.sh               | Small script to restore MySQL database                                |
 | web_restore.sh              | Small script to restore web Folder                                    |
 
 ### Config Folder
 | File                        | Description                                                                          |
 | :-------------------------- |:------------------------------------------------------------------------------------ |
+| docker.cnf                  | mysql-server config ( If there are changes, you must docker-compose build. )
 | fpm.conf                    | Custom PHP-FPM config                                                                |
 | php.ini                     | For additional configurations of PHP, еdit this file before deploying the container. |  
 | supervisord.conf            | supervisord.conf basic config                                                        |
@@ -79,4 +81,11 @@ Navigate to the project folder and start containers.
 ```less
 cd /path/to/exercise-php-nginx-mysql
 docker-compose up -d
+cp backup/init.sql db/
+docker exec -it webapp-db bash
+cd /var/lib/mysql
+mysql -uroot -ppassword
+\. init.sql
+
+
 ```
