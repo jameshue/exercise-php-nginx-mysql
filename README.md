@@ -6,7 +6,6 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/jameshue/exercise-php-nginx-mysql)
 ![GitHub repo size](https://img.shields.io/github/repo-size/jameshue/exercise-php-nginx-mysql)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jameshue/exercise-php-nginx-mysql)
-![GitHub repo file count](https://img.shields.io/github/directory-file-count/jameshue/exercise-php-nginx-mysql)
 <img alt="Licenses" src="https://img.shields.io/badge/License-GPLv3-blue.svg" style="max-width:100%;">
 
 ### Table of contents
