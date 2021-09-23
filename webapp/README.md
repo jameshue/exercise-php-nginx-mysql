@@ -118,4 +118,4 @@ docker run --name some-app --link some-mysql:mysql -d app-that-uses-mysql
 
 ### php-laravel-mysql-sample 應用截圖
 
-![exercise-php-nginx-mysql](./assets/exercise.png)
+![exercise-php-nginx-mysql](./php-laravel-mysql-sample.png)
