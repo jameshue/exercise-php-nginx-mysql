@@ -92,7 +92,5 @@ Perform database initialization steps. ( Then you can link http://smartclouds.si
 ```less
 cp backup/init.sql db/
 docker exec -it webapp-db bash
-cd /var/lib/mysql
-mysql -uroot -ppassword
-\. init.sql
+mysql -uroot -ppassword webapp_db < /var/lib/mysql/init.sql 2>/dev/null
 ```
